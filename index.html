@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sidra Sarwar — Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">SS</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Sidra Sarwar</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">Motivated Full Stack Developer skilled in React. Building responsive, high-quality web applications from Bhakkar, Pakistan 🇵🇰</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/sidrasarwar5" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sidra-sarwar-97a3242b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      
+        <a href="https://mail.google.com/mail/?view=cm&to=its77maliksidra@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span>SS</span>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>I'm a <strong>Motivated and detail-oriented Full Stack Developer</strong>, recently graduated in Software Engineering from Thal University Bhakkar. I specialize in building responsive web applications using <strong>React</strong>.</p>
+          <p>I'm actively seeking remote freelance opportunities or entry-level positions where I can contribute, grow, and deliver high-quality digital solutions.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3.70</span>
+              <span class="stat-label">CGPA / 4.00</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>BS Software Engineering<br/><span>Thal University Bhakkar — 2022–2026</span></p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Bhakkar, Punjab, Pakistan</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>its77maliksidra@gmail.com</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>0313-2943592</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid fade-in">
+        <div class="skill-item" data-level="90">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <span>React.js</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item" data-level="95">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <span>HTML5</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-item" data-level="90">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <span>CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item" data-level="85">
+          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+          <span>JavaScript ES6+</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item" data-level="75">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <span>MongoDB</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item" data-level="80">
+          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+          <span>Node.js</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item" data-level="85">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <span>Git & GitHub</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item" data-level="80">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <span>Vercel Deploy</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+      </div>
+      <div class="soft-skills fade-in">
+        <span>Quick Learner</span>
+        <span>Self-Motivated</span>
+        <span>Problem Solving</span>
+        <span>Remote Work</span>
+        <span>Time Management</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid fade-in">
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="project-links">
+              <a href="https://oppoinmentsystem.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-badge">Live & Deployed ✅</div>
+          <h3>Online Appointment Management System</h3>
+          <p>Full-stack appointment booking platform with separate portals for Admin, Doctors, and Patients. Patients can register, search for doctors, and book appointments in real time.</p>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> Admin dashboard to manage doctors</li>
+            <li><i class="fas fa-check"></i> Doctors manage appointments</li>
+            <li><i class="fas fa-check"></i> Deployed live with functional backend</li>
+          </ul>
+          <div class="project-tech">
+            <span>React</span><span>Node.js</span><span>render</span><span>Vercel</span>
+          </div>
+          <a href="https://oppoinmentsystem.vercel.app/" target="_blank" class="project-btn">View Live Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid fade-in">
+        <div class="contact-info">
+          <p>I'm currently open to <strong>remote freelance</strong> work and <strong>entry-level positions</strong>. If you have a project in mind or just want to say hi, feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:its77maliksidra@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>its77maliksidra@gmail.com</span>
+            </a>
+            <a href="tel:03132943592" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <span>0313-2943592</span>
+            </a>
+            <a href="https://github.com/sidrasarwar5" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>github.com/sidrasarwar5</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sidra-sarwar-97a3242b9/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+           
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/mbdeodoy" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & Built by <span>Sidra Sarwar</span> 💙</p>
+    <p class="footer-sub">© 2024 All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
